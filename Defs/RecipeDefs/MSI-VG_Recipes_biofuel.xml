@@ -3,7 +3,7 @@
 
 	<RecipeDef>
 		<defName>MSI-VG_MakeBiofuel</defName>
-		<label>make biofuel from grains (x5)</label>
+		<label>make biofuel from grains (bulk)</label>
 		<description>Make a batch of biofuel by extracting biofuel from wheat, corn, or beans.</description>
 		<jobString>Refining biofuel from organics.</jobString>
 		<effectWorking>Cremate</effectWorking>
@@ -21,7 +21,7 @@
 				<li>Rawbean</li>
 			  </thingDefs>
 			</filter>
-			<count>1.25</count>
+			<count>3.75</count>
 		  </li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -35,7 +35,7 @@
 		  </specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<products>
-			<VG_Biofuel>5</VG_Biofuel>
+			<VG_Biofuel>15</VG_Biofuel>
 		</products>
 		<recipeUsers>
 			 <li>Refinery</li>

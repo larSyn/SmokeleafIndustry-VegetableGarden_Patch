@@ -7,14 +7,14 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName = "VG_MakeBiofuel"]/ingredients/li/count</xpath>
 		<value>
-			<count>3.75</count>
+			<count>1.25</count>
 		</value>
 	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/RecipeDef[defName = "VG_MakeBiofuel"]/products/VG_Biofuel</xpath>
 		<value>
-			<VG_Biofuel>15</VG_Biofuel>
+			<VG_Biofuel>5</VG_Biofuel>
 		</value>
 	</Operation>
 	
