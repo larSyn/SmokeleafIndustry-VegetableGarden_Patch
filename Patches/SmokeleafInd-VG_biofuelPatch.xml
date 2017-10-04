@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!--========== Biofuel ==========-->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName = "VG_MakeBiofuel"]/ingredients/li/count</xpath>
+		<value>
+			<count>3.75</count>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName = "VG_MakeBiofuel"]/products/VG_Biofuel</xpath>
+		<value>
+			<VG_Biofuel>15</VG_Biofuel>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "HempolineGenerator"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+		<value>
+			<li>VG_Biofuel</li>
+		</value>
+	</Operation>
+	
+	<!--========== Remove Biofuel As Bench Fuel ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "FueledStove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "FueledStove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter</xpath>
+					<value>
+						<thingDefs />
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "FueledStove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+					<value>
+						<li>WoodLog</li>
+						<li>VG_IronWoodLog</li>
+						<li>Bamboo</li>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[DefName = "Oven"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName = "Oven"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter</xpath>
+					<value>
+						<thingDefs />
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName = "Oven"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+					<value>
+						<li>WoodLog</li>
+						<li>VG_IronWoodLog</li>
+						<li>Bamboo</li>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[DefName = "HandCanningstove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName = "HandCanningstove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter</xpath>
+					<value>
+						<thingDefs />
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName = "HandCanningstove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+					<value>
+						<li>WoodLog</li>
+						<li>VG_IronWoodLog</li>
+						<li>Bamboo</li>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[DefName = "FueledCandyTable"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName = "FueledCandyTable"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter</xpath>
+					<value>
+						<thingDefs />
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[DefName = "FueledCandyTable"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+					<value>
+						<li>WoodLog</li>
+						<li>VG_IronWoodLog</li>
+						<li>Bamboo</li>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

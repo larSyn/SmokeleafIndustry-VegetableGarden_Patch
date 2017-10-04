@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef>
+		<defName>MSI-VG_MakeBiofuel</defName>
+		<label>make biofuel from grains (x5)</label>
+		<description>Make a batch of biofuel by extracting biofuel from wheat, corn, or beans.</description>
+		<jobString>Refining biofuel from organics.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>1000</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Rawwheat</li>
+				<li>RawCorn</li>
+				<li>Rawbean</li>
+			  </thingDefs>
+			</filter>
+			<count>1.25</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Rawwheat</li>
+			<li>RawCorn</li>
+			<li>Rawbean</li>
+		  </thingDefs>
+		  <specialFiltersToDisallow>
+			<li>AllowRotten</li>
+		  </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<products>
+			<VG_Biofuel>5</VG_Biofuel>
+		</products>
+		<recipeUsers>
+			 <li>Refinery</li>
+		</recipeUsers>
+	</RecipeDef>
+
+</RecipeDefs>

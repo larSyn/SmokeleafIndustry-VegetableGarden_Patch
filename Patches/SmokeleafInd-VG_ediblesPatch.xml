@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!--========== Cookies ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName = "BakeSmokeleafCookies"]/recipeUsers</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeSmokeleafCookies"]</xpath>
+					<value>
+						<recipeUsers />
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeSmokeleafCookies"]/recipeUsers</xpath>
+					<value>
+						<li>Oven</li>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName = "BakeSmokeleafCookiesBulk"]/recipeUsers</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeSmokeleafCookiesBulk"]</xpath>
+					<value>
+						<recipeUsers />
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeSmokeleafCookiesBulk"]/recipeUsers</xpath>
+					<value>
+						<li>Oven</li>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "BakeSmokeleafCookies"]/ingredients/li[2]/filter/thingDefs</xpath>
+		<value>
+			<li>Flour</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "BakeSmokeleafCookies"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Flour</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "BakeSmokeleafCookiesBulk"]/ingredients/li[2]/filter/thingDefs</xpath>
+		<value>
+			<li>Flour</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "BakeSmokeleafCookiesBulk"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Flour</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "BakeSmokeleafCookies"]/ingredients</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Sugar</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "BakeSmokeleafCookies"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Sugar</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName = "BakeSmokeleafCookies"]/products/SmokeleafCookie</xpath>
+		<value>
+			<SmokeleafCookie>3</SmokeleafCookie>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "BakeSmokeleafCookiesBulk"]/ingredients</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Sugar</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "BakeSmokeleafCookiesBulk"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Sugar</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/RecipeDef[defName = "BakeSmokeleafCookiesBulk"]/products/SmokeleafCookie</xpath>
+		<value>
+			<SmokeleafCookie>15</SmokeleafCookie>
+		</value>
+	</Operation>
+	
+	<!--========== Brownies ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName = "BakeSmokeleafBrownies"]/recipeUsers</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeSmokeleafBrownies"]</xpath>
+					<value>
+						<recipeUsers />
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeSmokeleafBrownies"]/recipeUsers</xpath>
+					<value>
+						<li>Oven</li>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName = "BakeSmokeleafBrowniesBulk"]/recipeUsers</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeSmokeleafBrowniesBulk"]</xpath>
+					<value>
+						<recipeUsers />
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeSmokeleafBrowniesBulk"]/recipeUsers</xpath>
+					<value>
+						<li>Oven</li>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "BakeSmokeleafBrownies"]/ingredients/li[3]/filter/thingDefs</xpath>
+		<value>
+			<li>Flour</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "BakeSmokeleafBrownies"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Flour</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "BakeSmokeleafBrowniesBulk"]/ingredients/li[3]/filter/thingDefs</xpath>
+		<value>
+			<li>Flour</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "BakeSmokeleafBrowniesBulk"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Flour</li>
+		</value>
+	</Operation>
+	
+	<!--========== Butter-SoyMilk ==========-->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafButter"]/ingredients/li[1]/filter/thingDefs</xpath>
+		<value>
+			<li>soymilk</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafButter"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>soymilk</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafButterBulk"]/ingredients/li[1]/filter/thingDefs</xpath>
+		<value>
+			<li>soymilk</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafButterBulk"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>soymilk</li>
+		</value>
+	</Operation>
+	
+	<!--========== Butter-CoconutMilk ==========-->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafButter"]/ingredients/li[1]/filter/thingDefs</xpath>
+		<value>
+			<li>coconutmilk</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafButter"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>coconutmilk</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafButterBulk"]/ingredients/li[1]/filter/thingDefs</xpath>
+		<value>
+			<li>coconutmilk</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafButterBulk"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>coconutmilk</li>
+		</value>
+	</Operation>
+	
+	<!--========== Smoothie ==========-->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
+		<value>
+			<li>Rawapple</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Rawapple</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
+		<value>
+			<li>Rawbanana</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Rawbanana</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
+		<value>
+			<li>Rawgrape</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Rawgrape</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
+		<value>
+			<li>Raworange</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Raworange</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
+		<value>
+			<li>Rawpeach</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Rawpeach</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
+		<value>
+			<li>Rawpineapple</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Rawpineapple</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
+		<value>
+			<li>Rawblueberry</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Rawblueberry</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
+		<value>
+			<li>Rawwatermelon</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Rawwatermelon</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
+		<value>
+			<li>Rawgooseberry</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Rawgooseberry</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
+		<value>
+			<li>Rawcloudberry</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Rawcloudberry</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
+		<value>
+			<li>RawCherry</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>RawCherry</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
+		<value>
+			<li>RawCoconut</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>RawCoconut</li>
+		</value>
+	</Operation>
+	
+</Patch>

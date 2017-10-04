@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success> 
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName = "MakeHempCloth"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success> 
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "HempCloth"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName = "CraftHempFibers"]/recipeUsers</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "CraftHempFibers"]</xpath>
+					<value>
+						<recipeUsers />
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "CraftHempFibers"]/recipeUsers</xpath>
+					<value>
+						<li>TableLoom</li>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName = "BulkCraftHempFibers"]/recipeUsers</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BulkCraftHempFibers"]</xpath>
+					<value>
+						<recipeUsers />
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BulkCraftHempFibers"]/recipeUsers</xpath>
+					<value>
+						<li>TableLoom</li>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>
