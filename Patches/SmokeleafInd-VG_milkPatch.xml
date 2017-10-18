@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "HempMilk"]/thingCategories/li[1]</xpath>
+		<value>
+			<li>CookingSupplies</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "SmokeleafButter"]/thingCategories/li[1]</xpath>
+		<value>
+			<li>CookingSupplies</li>
+		</value>
+	</Operation>
+
+	<!--========== Chocolate Milk ==========-->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeChocolatemilk"]/ingredients/li[2]/filter/thingDefs</xpath>
+		<value>
+			<li>HempMilk</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeChocolatemilk"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>HempMilk</li>
+		</value>
+	</Operation>
+	
+	<!--========== Ice Cream ==========-->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeIcecream"]/ingredients/li[3]/filter/thingDefs</xpath>
+		<value>
+			<li>HempMilk</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeIcecream"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>HempMilk</li>
+		</value>
+	</Operation>
+	
+	<!--========== Yogurt ==========-->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeYogurt"]/ingredients/li[1]/filter/thingDefs</xpath>
+		<value>
+			<li>HempMilk</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeYogurt"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>HempMilk</li>
+		</value>
+	</Operation>
+	
+	<!--========== Smoothie ==========-->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmoothie"]/ingredients/li[1]/filter/thingDefs</xpath>
+		<value>
+			<li>HempMilk</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>HempMilk</li>
+		</value>
+	</Operation>
+	
+	<!--========== Cheese ==========-->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "Makesoycheese"]/ingredients/li[1]/filter/thingDefs</xpath>
+		<value>
+			<li>HempMilk</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "Makesoycheese"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>HempMilk</li>
+		</value>
+	</Operation>
+
+</Patch>
