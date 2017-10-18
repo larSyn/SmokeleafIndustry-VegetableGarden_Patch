@@ -262,165 +262,22 @@
 		</value>
 	</Operation>
 	
-	<!--========== Smoothie ==========-->
+	<!--========== Smokeleaf Smoothie ==========-->
 	
 	<Operation Class="PatchOperationAdd">
 		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
 		<value>
 			<li>Rawapple</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Rawapple</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
-		<value>
 			<li>Rawbanana</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Rawbanana</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
-		<value>
 			<li>Rawgrape</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Rawgrape</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
-		<value>
 			<li>Raworange</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Raworange</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
-		<value>
 			<li>Rawpeach</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Rawpeach</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
-		<value>
 			<li>Rawpineapple</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Rawpineapple</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
-		<value>
 			<li>Rawblueberry</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Rawblueberry</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
-		<value>
 			<li>Rawwatermelon</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Rawwatermelon</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
-		<value>
 			<li>Rawgooseberry</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Rawgooseberry</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
-		<value>
 			<li>Rawcloudberry</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Rawcloudberry</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
-		<value>
 			<li>RawCherry</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>RawCherry</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/ingredients/li[2]/filter/thingDefs</xpath>
-		<value>
 			<li>RawCoconut</li>
 		</value>
 	</Operation>
@@ -428,6 +285,55 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>*/RecipeDef[defName = "MakeSmokeleafSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
 		<value>
+			<li>Rawapple</li>
+			<li>Rawbanana</li>
+			<li>Rawgrape</li>
+			<li>Raworange</li>
+			<li>Rawpeach</li>
+			<li>Rawpineapple</li>
+			<li>Rawblueberry</li>
+			<li>Rawwatermelon</li>
+			<li>Rawgooseberry</li>
+			<li>Rawcloudberry</li>
+			<li>RawCherry</li>
+			<li>RawCoconut</li>
+		</value>
+	</Operation>
+	
+	<!--========== NutriLeaf Bar ==========-->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafNutriLeafBar"]/ingredients/li[1]/filter/thingDefs</xpath>
+		<value>
+			<li>Rawapple</li>
+			<li>Rawbanana</li>
+			<li>Rawgrape</li>
+			<li>Raworange</li>
+			<li>Rawpeach</li>
+			<li>Rawpineapple</li>
+			<li>Rawblueberry</li>
+			<li>Rawwatermelon</li>
+			<li>Rawgooseberry</li>
+			<li>Rawcloudberry</li>
+			<li>RawCherry</li>
+			<li>RawCoconut</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/RecipeDef[defName = "MakeSmokeleafNutriLeafBar"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Rawapple</li>
+			<li>Rawbanana</li>
+			<li>Rawgrape</li>
+			<li>Raworange</li>
+			<li>Rawpeach</li>
+			<li>Rawpineapple</li>
+			<li>Rawblueberry</li>
+			<li>Rawwatermelon</li>
+			<li>Rawgooseberry</li>
+			<li>Rawcloudberry</li>
+			<li>RawCherry</li>
 			<li>RawCoconut</li>
 		</value>
 	</Operation>
